@@ -1,0 +1,31 @@
+$backColor: rgb(54, 176, 247);
+$mainColor: #fff;
+$text-color: rgba($mainColor, 0.6);
+.login {
+    background-color: $backColor;
+    color: $mainColor;
+    padding: 78px;
+    .avatar {
+        .img-responsive {
+
+        }
+        .ani {
+
+        }
+        .free {
+
+        }
+    }
+
+    .form {
+        label {
+
+        }
+        .form-control {
+
+        }
+        .button {
+
+        }
+    }
+}
