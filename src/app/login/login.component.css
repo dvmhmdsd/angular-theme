@@ -1,6 +1,54 @@
 .login {
   background-color: #36b0f7;
   color: #fff;
-  padding: 78px; }
+  padding-top: 30px;
+  padding-bottom: 50px; }
+  .login .avatar {
+    margin-bottom: 20px; }
+    .login .avatar img {
+      border: 6px solid #fff;
+      border-radius: 50%;
+      height: 140px;
+      width: 140px; }
+    .login .avatar .angular {
+      font-size: 2.6vw; }
+    .login .avatar .free {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 1.5vw; }
+  .login .form label {
+    position: relative;
+    top: 40px;
+    left: -190px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all 0.35s linear; }
+    .login .form label.focus {
+      top: 0;
+      color: #fff;
+      font-size: 15px; }
+  .login .form .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    height: 45px;
+    margin: 0 auto 40px;
+    outline: 0;
+    width: 45%; }
+    .login .form .form-control:focus {
+      border-bottom: 2px solid #fff; }
+  .login .form .button {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    box-shadow: none;
+    outline: 0; }
 
 /*# sourceMappingURL=login.component.css.map */

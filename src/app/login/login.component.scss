@@ -4,28 +4,65 @@ $text-color: rgba($mainColor, 0.6);
 .login {
     background-color: $backColor;
     color: $mainColor;
-    padding: 78px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     .avatar {
-        .img-responsive {
-
+        margin-bottom: 20px;
+        img {
+            border: 6px solid $mainColor;
+            border-radius: 50%;
+            height: 140px;
+            width: 140px;
         }
-        .ani {
-
+        .angular {
+            font-size: 2.6vw;
         }
         .free {
-
+            color:$text-color;
+            font-size: 1.5vw;
         }
     }
 
     .form {
         label {
-
+            position: relative;
+            top: 40px;
+            left: -190px;
+            color: $text-color;
+            font-size: 18px;
+            letter-spacing: 1px;
+            transition: all 0.35s linear;
+            &.focus {
+                top: 0;
+                color: #fff;
+                font-size: 15px;
+            }
         }
         .form-control {
-
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid $text-color;
+            border-radius: 0;
+            box-shadow: none;
+            color: $mainColor;
+            font-size: 18px;
+            height: 45px;
+            margin: 0 auto 40px;
+            outline: 0;
+            width: 45%;
+            &:focus {
+                border-bottom: 2px solid $mainColor;
+            }
         }
         .button {
-
+            background: transparent;
+            border: 2px solid $mainColor;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+            letter-spacing: 0.3px;
+            box-shadow: none;
+            outline: 0;
         }
     }
 }
