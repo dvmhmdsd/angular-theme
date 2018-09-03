@@ -1,25 +1,32 @@
 $backColor: rgb(54, 176, 247);
 $mainColor: #fff;
 $text-color: rgba($mainColor, 0.6);
+
+.signup {
+    font-size: 20px;
+    padding: 20px;
+    
+}
+
 .login {
     background-color: $backColor;
     color: $mainColor;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 70px;
     .avatar {
-        margin-bottom: 20px;
         img {
             border: 6px solid $mainColor;
             border-radius: 50%;
-            height: 140px;
-            width: 140px;
+            height: 100px;
+            width: 100px;
         }
         .angular {
             font-size: 2.6vw;
         }
         .free {
-            color:$text-color;
+            color: $text-color;
             font-size: 1.5vw;
+            margin-bottom: 20px;
         }
     }
 
@@ -54,6 +61,12 @@ $text-color: rgba($mainColor, 0.6);
                 border-bottom: 2px solid $mainColor;
             }
         }
+        .validate {
+            color: #a94442;
+            position: relative;
+            top: -32px;
+            left: -188px;
+        }
         .button {
             background: transparent;
             border: 2px solid $mainColor;
@@ -63,6 +76,23 @@ $text-color: rgba($mainColor, 0.6);
             letter-spacing: 0.3px;
             box-shadow: none;
             outline: 0;
+            margin-right: 10px;
+            &:disabled {
+                cursor: not-allowed;
+                border: 2px solid $text-color;
+                color: $text-color;
+            }
+        }
+        .buttons {
+            background: transparent;
+            border: none;
+            color: $text-color;
+            font-weight: bold;
+            box-shadow: none;
+            outline: 0;
+            &:hover {
+                color: $mainColor;
+            }
         }
     }
 }

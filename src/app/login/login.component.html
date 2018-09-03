@@ -5,16 +5,19 @@
       <h1 class="angular">Angular Theme</h1>
       <p class="free">Free Edition</p>
     </div>
-    <form class="form">
+    <form class="form" #loginform="ngForm" (ngSubmit)="onSubmit(loginform.value)" (keyup.enter)="onSubmit(loginform.value)">
       <div class="from-group">   
         <label for="email">Your Email</label>
-        <input class="form-control" type="email" id="email" name="email"/>
+        <input class="form-control" type="email" id="email" name="email" [(ngModel)]="model.name" #email="ngModel" required="required"/>
+        <div class="validate" [hidden]="email.valid || email.pristine">Email is required</div>
       </div>
       <div class="form-group">
         <label for="pass"> Password</label>
-        <input class="form-control" type="password" id="pass" name="pass"/>
+        <input class="form-control" type="password" id="pass" name="pass" [(ngModel)]="model.pass" #password="ngModel" required="required"/>
+        <div class="validate" [hidden]="password.valid || password.pristine">Write your password man!</div>
       </div>
-      <button class="button" type="submit">Login</button>
+      <button class="button" type="submit" [disabled]="!loginform.form.valid">Login</button><span>or
+        <button class="buttons" type="submit">signup</button></span>
     </form>
   </div>
 </div>

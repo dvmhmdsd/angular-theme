@@ -1,3 +1,4 @@
+
 .login.text-center
     .container
         .avatar
@@ -5,13 +6,21 @@
             h1.angular Angular Theme
             p.free Free Edition
 
-        form.form
+        form.form(#loginform="ngForm", (ngSubmit)="onSubmit(loginform.value)", (keyup.enter)="onSubmit(loginform.value)")
             .from-group    
                 label(for="email") Your Email
-                input.form-control(type="email", id="email" name="email")
+                input.form-control(type="email", id="email" name="email",
+                [(ngModel)]="model.name",
+                #email="ngModel" required)
+                .validate([hidden]="email.valid || email.pristine") Email is required
 
             .form-group
                 label(for="pass")  Password
-                input.form-control(type="password", id="pass", name="pass")
+                input.form-control(type="password", id="pass", name="pass",
+                [(ngModel)]="model.pass",
+                #password="ngModel" required)
+                .validate([hidden]="password.valid || password.pristine") Write your password man!
 
-            button.button(type='submit') Login
+            button.button(type='submit', [disabled]="!loginform.form.valid") Login
+            span or
+                button.buttons(type='submit') signup

@@ -1,20 +1,23 @@
+.signup {
+  font-size: 20px;
+  padding: 20px; }
+
 .login {
   background-color: #36b0f7;
   color: #fff;
-  padding-top: 30px;
-  padding-bottom: 50px; }
-  .login .avatar {
+  padding-top: 50px;
+  padding-bottom: 70px; }
+  .login .avatar img {
+    border: 6px solid #fff;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px; }
+  .login .avatar .angular {
+    font-size: 2.6vw; }
+  .login .avatar .free {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.5vw;
     margin-bottom: 20px; }
-    .login .avatar img {
-      border: 6px solid #fff;
-      border-radius: 50%;
-      height: 140px;
-      width: 140px; }
-    .login .avatar .angular {
-      font-size: 2.6vw; }
-    .login .avatar .free {
-      color: rgba(255, 255, 255, 0.6);
-      font-size: 1.5vw; }
   .login .form label {
     position: relative;
     top: 40px;
@@ -41,6 +44,11 @@
     width: 45%; }
     .login .form .form-control:focus {
       border-bottom: 2px solid #fff; }
+  .login .form .validate {
+    color: #a94442;
+    position: relative;
+    top: -32px;
+    left: -188px; }
   .login .form .button {
     background: transparent;
     border: 2px solid #fff;
@@ -49,6 +57,20 @@
     font-weight: bold;
     letter-spacing: 0.3px;
     box-shadow: none;
+    outline: 0;
+    margin-right: 10px; }
+    .login .form .button:disabled {
+      cursor: not-allowed;
+      border: 2px solid rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.6); }
+  .login .form .buttons {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    box-shadow: none;
     outline: 0; }
+    .login .form .buttons:hover {
+      color: #fff; }
 
 /*# sourceMappingURL=login.component.css.map */

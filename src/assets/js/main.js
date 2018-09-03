@@ -1,4 +1,7 @@
 $(function () {
+
+    $('.form .form-control').removeClass('ng-invalid');
+
     $('.form .form-control').on('focus', function() {
         $(this).siblings('label').addClass('focus');
     });
@@ -7,6 +10,8 @@ $(function () {
         if ($(this).val() == '') {
             $(this).siblings('label').removeClass('focus');
         }
-        
+        if ($(this).hasClass('ng-invalid')) {
+            $(this).siblings('label').addClass('focus');
+        }
     });
 });

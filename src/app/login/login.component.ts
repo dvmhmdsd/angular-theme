@@ -1,3 +1,4 @@
+import { Users } from './../users';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -7,11 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  model = new Users('', '');
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  
+  onSubmit(form: any) {
+    console.log(JSON.stringify(form));
+  }  
 
 }
