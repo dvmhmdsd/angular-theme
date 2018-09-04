@@ -17,7 +17,7 @@
         <div class="validate" [hidden]="password.valid || password.pristine">Write your password man!</div>
       </div>
       <button class="button" type="submit" [disabled]="!loginform.form.valid">Login</button><span>or
-        <button class="buttons" type="submit">signup</button></span>
+        <button class="buttons" type="submit" routerLink="/signup">signup</button></span>
     </form>
   </div>
 </div>
