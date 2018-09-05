@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   onSubmit(form: any) {
     console.log(JSON.stringify(form));
     
-    let result = this.myLogin.login(JSON.stringify(form));
+    let result = this.myLogin.login(form);
     this.status = result;
     if(this.status) {
       this.myRoute.navigate(['/dashboard/preview']);
