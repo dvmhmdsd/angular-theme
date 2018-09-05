@@ -7,7 +7,7 @@
             p.free Free Edition
 
         form.form(#loginform="ngForm", (ngSubmit)="onSubmit(loginform.value)", (keyup.enter)="onSubmit(loginform.value)")
-            .from-group    
+            .from-group
                 label(for="email") Your Email
                 input.form-control(type="email", id="email" name="email",
                 [(ngModel)]="model.name",
