@@ -1,5 +1,5 @@
 $(function () {
-
+    //mentain the style of input fields
     $('.form .form-control').removeClass('ng-invalid');
 
     $('.form .form-control').on('focus', function() {
