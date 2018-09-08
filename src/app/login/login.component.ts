@@ -24,9 +24,13 @@ export class LoginComponent implements OnInit {
     let result = this.myLogin.login(form);
     this.status = result;
     if(this.status) {
-      this.myRoute.navigate(['/dashboard/preview']);
+      setTimeout(() => {
+        this.myRoute.navigate(['/dashboard/preview']);
+      }, 2000);
     } else {
-      this.myRoute.navigate(['/signup']);
+      setTimeout(() => {
+        this.myRoute.navigate(['/signup']);
+      }, 2000);
     }
   }  
 

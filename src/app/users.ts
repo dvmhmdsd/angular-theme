@@ -1,4 +1,4 @@
 export class Users {
-    
-    constructor(public email: string, public pass: string) {}
+    fullName: string;
+    constructor(public email: string, public pass: any) {}
 }

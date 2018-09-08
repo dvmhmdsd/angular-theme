@@ -1,0 +1,34 @@
+
+<div class="login text-center">
+  <div class="container">
+    <div class="toggle text-right" [hidden]="!active">Hi {{username.value}}</div>
+    <div class="avatar"><img src="../../assets/img/images.jpg" alt="user-image"/>
+      <h1 class="angular">Angular Theme</h1>
+      <p class="free">Free Edition</p>
+    </div>
+    <form class="form" #loginform="ngForm" (ngSubmit)="signup(loginform.value)" (keyup.enter)="signup(loginform.value)">
+      <div class="form-group">
+        <label class="full" for="name">Write your full name</label>
+        <input class="form-control" type="text" id="name" name="name"/>
+      </div>
+      <div class="from-group">
+        <label for="username">Username</label>
+        <input class="form-control" type="text" id="username" name="username" [(ngModel)]="model.name" #username="ngModel" required="required"/>
+        <div class="validate" [hidden]="username.valid || username.pristine">Username is required</div>
+      </div>
+      <div class="form-group">
+        <label for="pass"> Password</label>
+        <input class="form-control" type="password" id="pass" name="pass" [(ngModel)]="model.pass" #password="ngModel" required="required"/>
+        <div class="validate" [hidden]="password.valid || password.pristine">Write a password man!</div>
+      </div>
+      <div class="form-group">
+        <label class="full" for="rpass">Confirm Password</label>
+        <input class="form-control" type="password" id="rpass" name="rpass" [(ngModel)]="model.fullName" #rpassword="ngModel" required="required"/>
+        <div class="validate" [hidden]="rpassword.valid || rpassword.pristine">Write a password man!</div>
+        <div class="repeat"></div>
+      </div>
+      <button class="button" id="button" type="submit" [disabled]="!loginform.form.valid" (click)="navigate()">signup</button><span>or</span>
+      <button class="buttons" type="submit" routerLink="/login">Login page</button>
+    </form>
+  </div>
+</div>

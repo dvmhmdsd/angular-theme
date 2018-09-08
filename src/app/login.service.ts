@@ -25,10 +25,6 @@ export class LoginService {
     return true;
   }
 
-  signup(object: any) {
-    member.push(object);
-  }
-
   login(data: any) {
     for (let i of member) {
       if (this.deepEqual(data, i)) {

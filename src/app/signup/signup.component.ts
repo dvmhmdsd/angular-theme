@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { LoginService } from './../login.service';
+import { Users } from './../users';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '../../../node_modules/@angular/router';
+import { member } from '../user';
 
 @Component({
   selector: 'app-signup',
@@ -7,9 +11,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
+  model = new Users('', '');
+  active: boolean = false;
+  button = document.getElementById('button');
+
+  constructor(private myRoute: Router) { }
 
   ngOnInit() {
+  }
+
+  
+  signup(object: any) {
+    member.push(object);
+    this.toggle();
+  }
+
+  toggle() {
+    if (!this.active) {
+      this.active = true;
+    }
+  }
+
+  navigate() {
+    setTimeout(() => {
+      this.myRoute.navigate(['/dashboard/preview']);
+    }, 2000);
   }
 
 }

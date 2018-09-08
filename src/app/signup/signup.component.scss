@@ -1,0 +1,20 @@
+@import '../login/login.component';
+
+.login {
+    position: relative;
+    .toggle {
+        padding: 10px 40px;
+        background-color: rgba(142, 238, 158, 0.8);
+        border: 2px solid #fff;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        transition: all 0.3s ease-in;
+    }
+
+    .form {
+        label.full {
+            left: -145px;
+        }
+    }
+}

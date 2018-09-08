@@ -8,11 +8,11 @@
 
         form.form(#loginform="ngForm", (ngSubmit)="onSubmit(loginform.value)", (keyup.enter)="onSubmit(loginform.value)")
             .from-group
-                label(for="email") Your Email
-                input.form-control(type="email", id="email" name="email",
+                label(for="email") Username
+                input.form-control(type="text", id="username" name="username",
                 [(ngModel)]="model.name",
-                #email="ngModel" required)
-                .validate([hidden]="email.valid || email.pristine") Email is required
+                #username="ngModel" required)
+                .validate([hidden]="username.valid || username.pristine") Username is required
 
             .form-group
                 label(for="pass")  Password
@@ -23,4 +23,4 @@
 
             button.button(type='submit', [disabled]="!loginform.form.valid") Login
             span or
-                button.buttons(type='submit', routerLink="/signup") signup
+            button.buttons(type='submit', routerLink="/signup") signup

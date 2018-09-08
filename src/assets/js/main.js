@@ -14,4 +14,8 @@ $(function () {
             $(this).siblings('label').addClass('focus');
         }
     });
+
+    $("form .button").on('click', function () {
+        $(this).addClass("progression");
+    });
 });

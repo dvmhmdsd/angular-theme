@@ -77,12 +77,55 @@ $text-color: rgba($mainColor, 0.6);
             box-shadow: none;
             outline: 0;
             margin-right: 10px;
+            overflow: hidden;
+            transition: width 0.5s ease-in;
             &:disabled {
                 cursor: not-allowed;
                 border: 2px solid $text-color;
                 color: $text-color;
             }
+            &.progression {
+                position: relative;
+                &:after {
+                    content: '';
+                    background-color: rgba($color: #78d9f6, $alpha: 0.6);
+                    position: absolute;
+                    top: 0;
+                    left: 0px;
+                    height: 100%;
+                    width: 100%;
+                    animation: progress 1.8s;
+                }
+            }
+
+            @keyframes progress {
+                0% {
+                    width: 0%;
+                }
+                10% {
+                    width: 15%;
+                }
+                20% {
+                    width: 30%;
+                }
+                40% {
+                    width: 45%;
+                }
+                55% {
+                    width: 60%;
+                }
+                70% {
+                    width: 80%;
+                }
+                94% {
+                    width: 90%;
+                }
+                100% {
+                    width: 100%;
+                }
+            }
         }
+
         .buttons {
             background: transparent;
             border: none;
