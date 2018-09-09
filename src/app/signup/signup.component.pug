@@ -31,7 +31,7 @@
             .form-group
                 label.full(for="rpass") Confirm Password
                 input.form-control(type="password", id="rpass", name="rpass",
-                [(ngModel)]="model.fullName",
+                [(ngModel)]="model.password",
                 #rpassword="ngModel" required)
                 .validate([hidden]="rpassword.valid || rpassword.pristine") Write a password man!
                 .repeat

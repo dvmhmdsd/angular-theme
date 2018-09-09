@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./preview.component.css']
 })
 export class PreviewComponent implements OnInit {
-
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit() {
   }
