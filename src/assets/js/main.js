@@ -37,4 +37,8 @@ $(function () {
         $('.not-menu').fadeOut();
     });
 
+    if(window.location.href.indexOf("login") > -1 || window.location.href.indexOf("signup") > -1) {
+        $('header').hide();
+     }
+
 });

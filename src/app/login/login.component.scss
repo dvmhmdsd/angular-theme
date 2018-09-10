@@ -2,6 +2,10 @@ $backColor: rgb(54, 176, 247);
 $mainColor: #fff;
 $text-color: rgba($mainColor, 0.6);
 
+header {
+    display: none;
+}
+
 .signup {
     font-size: 20px;
     padding: 20px;

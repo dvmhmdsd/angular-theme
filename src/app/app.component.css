@@ -52,6 +52,7 @@ header nav {
           font-size: 12px;
           padding: 3px; }
       header nav .rest-nav .left .not-menu, header nav .rest-nav .left .mess-menu {
+        background-color: #fff;
         position: absolute;
         margin: 15px 0 0px 70px;
         list-style: none;
