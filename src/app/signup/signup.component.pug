@@ -1,6 +1,6 @@
 .login.text-center
     .container
-        .toggle.text-right([hidden]="!active") Hi {{username.value}}
+        .toggle.text-right([hidden]="!active") Welcome {{username.value}}
         
         .avatar
             img(src="../../assets/img/images.jpg", alt="user-image")
@@ -30,11 +30,7 @@
 
             .form-group
                 label.full(for="rpass") Confirm Password
-                input.form-control(type="password", id="rpass", name="rpass",
-                [(ngModel)]="model.password",
-                #rpassword="ngModel" required)
-                .validate([hidden]="rpassword.valid || rpassword.pristine") Write a password man!
-                .repeat
+                input.form-control(type="password", id="rpass", name="rpass")
 
             
             button.button#button(type='submit', [disabled]="!loginform.form.valid", (click)="navigate()") signup

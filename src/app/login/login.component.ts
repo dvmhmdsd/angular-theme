@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(form: any) {
-    console.log(JSON.stringify(form));
+    console.log(form);
     
     let result = this.myLogin.login(form);
     this.status = result;

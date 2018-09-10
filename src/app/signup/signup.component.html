@@ -1,7 +1,7 @@
 
 <div class="login text-center">
   <div class="container">
-    <div class="toggle text-right" [hidden]="!active">Hi {{username.value}}</div>
+    <div class="toggle text-right" [hidden]="!active">Welcome {{username.value}}</div>
     <div class="avatar"><img src="../../assets/img/images.jpg" alt="user-image"/>
       <h1 class="angular">Angular Theme</h1>
       <p class="free">Free Edition</p>
@@ -23,9 +23,7 @@
       </div>
       <div class="form-group">
         <label class="full" for="rpass">Confirm Password</label>
-        <input class="form-control" type="password" id="rpass" name="rpass" [(ngModel)]="model.password" #rpassword="ngModel" required="required"/>
-        <div class="validate" [hidden]="rpassword.valid || rpassword.pristine">Write a password man!</div>
-        <div class="repeat"></div>
+        <input class="form-control" type="password" id="rpass" name="rpass"/>
       </div>
       <button class="button" id="button" type="submit" [disabled]="!loginform.form.valid" (click)="navigate()">signup</button><span>or</span>
       <button class="buttons" type="submit" routerLink="/login">Login page</button>

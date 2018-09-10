@@ -1,3 +1,69 @@
-
+header nav {
+  background-color: #fff;
+  color: #3ca2e0; }
+  header nav .head {
+    float: left;
+    width: 20%; }
+    header nav .head a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none; }
+      header nav .head a h1 {
+        background-color: #36b0f7;
+        padding: 10px 36px;
+        margin: 0 20px 0 0;
+        font-size: 1.7vw; }
+  header nav .rest-nav {
+    float: left;
+    width: 80%; }
+    header nav .rest-nav .left {
+      width: 50%;
+      padding: 10px; }
+      header nav .rest-nav .left .fa-search {
+        position: absolute;
+        top: 12px;
+        font-size: 19px; }
+      header nav .rest-nav .left .search {
+        position: relative;
+        background-color: transparent;
+        border-color: transparent transparent #36b0f7;
+        border-width: 1px;
+        box-shadow: none;
+        outline: 0;
+        padding-left: 25px;
+        width: 10%;
+        transition: width 0.3s linear; }
+        header nav .rest-nav .left .search:focus {
+          width: 35%; }
+      header nav .rest-nav .left .clickable {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 10px; }
+        header nav .rest-nav .left .clickable .fa {
+          font-size: 20px; }
+        header nav .rest-nav .left .clickable span {
+          position: relative;
+          color: #fff;
+          z-index: 1;
+          top: -12px;
+          left: 29px;
+          background-color: #de6764;
+          border-radius: 50%;
+          font-size: 12px;
+          padding: 3px; }
+      header nav .rest-nav .left .not-menu, header nav .rest-nav .left .mess-menu {
+        position: absolute;
+        margin: 15px 0 0px 70px;
+        list-style: none;
+        color: #5f5e5e;
+        border: 1px solid #9c9c9c;
+        display: none;
+        padding-left: 0;
+        z-index: 2; }
+        header nav .rest-nav .left .not-menu li, header nav .rest-nav .left .mess-menu li {
+          border-bottom: 1px solid #9c9c9c;
+          padding: 5px 15px; }
+      header nav .rest-nav .left .mess-menu {
+        margin: 15px 0 0px 115px; }
 
 /*# sourceMappingURL=app.component.css.map */
