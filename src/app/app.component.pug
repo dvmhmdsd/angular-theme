@@ -1,7 +1,7 @@
 header
     nav
         .head
-            a(routerLink="/dashboard/preview")
+            a.heading(routerLink="/dashboard/preview")
                 h1.title {{title}}
         .rest-nav
             .left.pull-left
@@ -31,8 +31,8 @@ header
                         p   Lorem, ipsum dolor sit amet consectetur
 
                 .clickable.messages
-                    span    14
-                    i.fa.fa-envelope
+                        span    14
+                        i.fa.fa-envelope
                 
                 ul.mess-menu
                     li 
@@ -53,14 +53,24 @@ header
                         p   Lorem, ipsum dolor sit amet consectetur
 
             .right.pull-right
-                ul.links
-                    li  
+                ul.links.list-unstyled
+                    li.toggle 
+                        span LTR/RTL
+                    li.clickable 
                         img(src="../../assets/img/images.jpg", alt="user-image")
-                    li LTR/RTL
+                        span Project user
+                    .clearfix
+                
+                ul.profile.list-unstyled
+                    li Profile
+                    li Logout
             .clearfix
         .clearfix
 
 
-    aside
+aside
+   .sidebar hi
+
+
 
 router-outlet

@@ -11,6 +11,7 @@ import { SignupComponent } from './signup/signup.component';
 
 
 import { AppRoutingModule } from './app-routing.module';
+import { NotFound404Component } from './not-found404/not-found404.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
     SignupComponent,
     PreviewComponent,
     ReportsComponent,
+    NotFound404Component,
   ],
   imports: [
     BrowserModule,

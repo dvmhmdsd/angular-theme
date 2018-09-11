@@ -19,10 +19,12 @@ $(function () {
         $(this).addClass("progression");
     });
 
-    $('body').on('click', function() {
+    $('html').on('click', function() {
         $('.not-menu').fadeOut();
         $('.mess-menu').fadeOut();
+        $('.profile').fadeOut();
     });
+
 
     $('.rest-nav .notifi').on('click', function(e) {
         e.stopPropagation();
@@ -40,5 +42,18 @@ $(function () {
     if(window.location.href.indexOf("login") > -1 || window.location.href.indexOf("signup") > -1) {
         $('header').hide();
      }
+
+     $('.right .clickable').on('click', function(e) {
+        e.stopPropagation();
+        $('.profile').fadeToggle();
+     });
+
+     $('aside').css({
+         width: $('.title').innerWidth()
+     });
+     
+     $('.links .toggle').on('click', function() {
+        $('aside').toggleClass('switch');
+     });
 
 });
