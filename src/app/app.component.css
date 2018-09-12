@@ -109,7 +109,12 @@ aside {
   aside.switch {
     right: 0;
     left: auto; }
-  aside .sidebar {
-    position: absolute; }
+    aside.switch .sidebar {
+      position: absolute;
+      text-align: right;
+      right: 0; }
+
+.hide {
+  display: none; }
 
 /*# sourceMappingURL=app.component.css.map */

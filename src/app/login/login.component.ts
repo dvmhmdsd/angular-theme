@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   model = new Users('', '');
   status: boolean;
-
+  
   constructor(private myLogin: LoginService, private myRoute: Router) { }
 
   ngOnInit() {

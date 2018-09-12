@@ -40,8 +40,14 @@ $(function () {
     });
 
     if(window.location.href.indexOf("login") > -1 || window.location.href.indexOf("signup") > -1) {
-        $('header').hide();
-     }
+        $('header, aside').hide();    
+    }
+    
+    $('.form .button').on('click', function() {
+            setTimeout(function() {
+                location.reload();
+            }, 2050);
+     });
 
      $('.right .clickable').on('click', function(e) {
         e.stopPropagation();

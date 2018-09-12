@@ -1,4 +1,4 @@
-import { LoginService } from '../login.service';
+
 import { Users } from '../users';
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
@@ -13,7 +13,6 @@ export class SignupComponent implements OnInit {
 
   model = new Users('', '');
   active: boolean = false;
-  button = document.getElementById('button');
 
   constructor(private myRoute: Router) { }
 
