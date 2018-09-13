@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     this.status = result;
     if(this.status) {
       setTimeout(() => {
-        this.myRoute.navigate(['/dashboard/preview']);
+        this.myRoute.navigate(['/dashboard']);
       }, 2000);
     } else {
       setTimeout(() => {

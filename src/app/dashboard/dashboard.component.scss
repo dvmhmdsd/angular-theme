@@ -1,0 +1,157 @@
+$mainColor: rgb(54, 176, 247);
+$textColor: #3ca2e0;
+
+header {
+    nav {
+        background-color: #fff;
+        color: $textColor;
+        height: 45px;
+        border-bottom: 1px solid #d6d6d6;
+        overflow: hidden;
+        li {
+            cursor: pointer;
+            &:hover {
+                color: #fff;
+                background-color: $mainColor;
+            }
+        }
+        .head {
+            float: left;
+            width: 20%;    
+            a {
+                color: rgba(#fff, 0.8);
+                text-decoration: none;
+                h1 {
+                    background-color: $mainColor;
+                    padding: 10px 36px;
+                    margin: 0 20px 0 0;
+                    font-size: 1.7vw;
+                }
+            }
+        }
+        .rest-nav {
+            float: left;
+            width: 80%;
+            height: 45px;
+            .left {
+                width: 50%;
+                padding: 10px;
+                .fa-search {
+                    position: absolute;
+                    top: 12px;
+                    font-size: 19px;
+                }
+                .search {
+                    position: relative;
+                    background-color: transparent;
+                    border-color: transparent transparent $mainColor;
+                    border-width: 1px;
+                    box-shadow: none;
+                    outline: 0;
+                    padding-left: 25px;
+                    width: 10%;
+                    transition: width 0.3s linear;
+                    &:focus {
+                        width: 35%;
+                    }
+                }
+                .clickable {
+                    position: relative;
+                    cursor: pointer;
+                    display: inline-block;
+                    margin-right: 10px;
+                    .fa {
+                        font-size: 20px;
+                    }
+                    span {
+                        position: relative;
+                        color: #fff;
+                        z-index: 1;
+                        top: -12px;
+                        left: 29px;
+                        background-color: #de6764;
+                        border-radius: 50%;
+                        font-size: 12px;
+                        padding: 3px;
+                    }
+                }
+                .not-menu, .mess-menu {
+                    background-color: #fff;
+                    box-shadow: 0px 7px 10px -3px #ccc;
+                    position: absolute;
+                    margin: 11px 0 0px 70px;
+                    list-style: none;
+                    color: #5f5e5e;
+                    display: none;
+                    padding-left: 0;
+                    z-index: 2;
+                    li {
+                        border-bottom: 1px solid #9c9c9c;
+                        padding: 5px 15px;
+                    }
+                }
+                .mess-menu {
+                    margin: 11px 0 0px 115px;
+                }
+            }
+            .right {
+                .links {
+                    margin-bottom: 0;
+                    
+                    li {
+                        float: left;
+                        padding: 5px 15px;
+                        height: 45px;
+                        img {
+                            max-height: 35px;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                        }
+                        span {
+                            line-height: 2.3;
+                        }
+                    }
+                }
+                .clickable {
+                    position: relative;
+                }
+                .profile {
+                    display: none;
+                    position: absolute;
+                    right: 10px;
+                    width: 12%;
+                    z-index: 3;
+                    box-shadow: 0px 7px 10px -3px #ccc;
+                    li {
+                        padding: 10px;
+                        border-bottom: 1px solid #000;
+                        &:hover {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+aside {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    &.switch {
+        right: 0;
+        left: auto;
+        .sidebar {
+            position: absolute;
+            text-align: right;
+            right: 0;
+        }
+    }
+}
+
+
+
+.hide {
+    display: none;
+}

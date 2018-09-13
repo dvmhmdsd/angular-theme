@@ -39,7 +39,7 @@ $(function () {
         $('.not-menu').fadeOut();
     });
 
-    if(window.location.href.indexOf("login") > -1 || window.location.href.indexOf("signup") > -1) {
+   /* if(window.location.href.indexOf("login") > -1 || window.location.href.indexOf("signup") > -1) {
         $('header, aside').hide();    
     }
     
@@ -47,7 +47,7 @@ $(function () {
             setTimeout(function() {
                 location.reload();
             }, 2050);
-     });
+     });*/
 
      $('.right .clickable').on('click', function(e) {
         e.stopPropagation();
