@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 $mainColor: rgb(54, 176, 247);
 $textColor: #3ca2e0;
 
@@ -6,7 +8,7 @@ header {
         background-color: #fff;
         color: $textColor;
         height: 45px;
-        border-bottom: 1px solid #d6d6d6;
+        border-bottom: 1px solid rgba(0,0,0,0.13);
         overflow: hidden;
         li {
             cursor: pointer;
@@ -136,9 +138,12 @@ header {
 }
 
 aside {
+    background-color: rgba($mainColor, 0.8);
     position: fixed;
     left: 0;
     height: 100%;
+    width: $width;
+    color: rgba(255,255,255,.8);
     &.switch {
         right: 0;
         left: auto;
@@ -148,10 +153,4 @@ aside {
             right: 0;
         }
     }
-}
-
-
-
-.hide {
-    display: none;
 }

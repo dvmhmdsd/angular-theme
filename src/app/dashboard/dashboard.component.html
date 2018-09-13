@@ -1,7 +1,7 @@
 
 <header>
   <nav>
-    <div class="head"><a class="heading" routerLink="/dashboard/preview">
+    <div class="head"><a class="heading" (click)="navToHome()">
         <h1 class="title">Angular Project</h1></a></div>
     <div class="rest-nav">
       <div class="left pull-left"><i class="fa fa-search"></i>
@@ -52,8 +52,8 @@
           <div class="clearfix"></div>
         </ul>
         <ul class="profile list-unstyled">
-          <li>Profile</li>
-          <li>Logout</li>
+          <li (click)="navToProfile()">Profile</li>
+          <li class="logger" (click)="logOut()">Logout</li>
         </ul>
       </div>
       <div class="clearfix"></div>
@@ -64,4 +64,4 @@
 <aside>
   <div class="sidebar">hi</div>
 </aside>
-<router-outlet></router-outlet><a routerLink="/dashboard/reports">repos</a>
+<router-outlet></router-outlet>

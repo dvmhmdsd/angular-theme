@@ -1,7 +1,7 @@
 header
     nav
         .head
-            a.heading(routerLink="/dashboard/preview")
+            a.heading( (click)="navToHome()")
                 h1.title Angular Project
         .rest-nav
             .left.pull-left
@@ -62,8 +62,8 @@ header
                     .clearfix
                 
                 ul.profile.list-unstyled
-                    li Profile
-                    li Logout
+                    li((click)="navToProfile()") Profile
+                    li.logger((click)="logOut()") Logout
             .clearfix
         .clearfix
 
@@ -74,4 +74,3 @@ aside
 
 
 router-outlet
-a(routerLink="/dashboard/reports") repos

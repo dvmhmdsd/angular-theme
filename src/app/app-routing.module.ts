@@ -1,3 +1,4 @@
+import { ProfileComponent } from './dashboard/profile/profile.component';
 import { PreviewComponent } from './dashboard/preview/preview.component';
 import { ReportsComponent } from './dashboard/reports/reports.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -24,11 +25,16 @@ const routes: Routes = [
         component: ReportsComponent
       },
       {
+        path: 'profile',
+        component: ProfileComponent
+      },
+      {
         path: 'preview',
         component: PreviewComponent
       }
     ]
   },
+  {path: 'dashboard/reports', component: ReportsComponent},
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   {path: '**', component: NotFound404Component},
 ];

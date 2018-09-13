@@ -1,4 +1,4 @@
-import { DashboardModule } from './dashboard/dashboard.module';
+import { ReportsComponent } from './dashboard/reports/reports.component';
 import { PreviewComponent } from './dashboard/preview/preview.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -12,6 +12,7 @@ import { SignupComponent } from './signup/signup.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { NotFound404Component } from './not-found404/not-found404.component';
+import { ProfileComponent } from './dashboard/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,14 @@ import { NotFound404Component } from './not-found404/not-found404.component';
     DashboardComponent,
     SignupComponent,
     PreviewComponent,
+    ReportsComponent,
     NotFound404Component,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

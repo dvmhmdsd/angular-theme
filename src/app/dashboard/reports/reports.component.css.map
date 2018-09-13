@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAEA,UAAW;EACP,WAAW,EAAE,QAAW;EACxB,mBAAW;IACP,WAAW,EAAE,CAAC;IACd,YAAY,EANZ,QAAQ",
+"sources": ["../variables.scss"],
 "names": [],
 "file": "reports.component.css"
 }

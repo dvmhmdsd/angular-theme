@@ -1,3 +1,7 @@
-
+.component {
+  margin-left: 264.19px; }
+  .component.switched {
+    margin-left: 0;
+    margin-right: 253.19px; }
 
 /*# sourceMappingURL=reports.component.css.map */

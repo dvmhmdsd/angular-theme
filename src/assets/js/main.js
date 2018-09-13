@@ -1,6 +1,5 @@
 $(function () {
     //mentain the style of input fields
-    $('.form .form-control').removeClass('ng-invalid');
 
     $('.form .form-control').on('focus', function() {
         $(this).siblings('label').addClass('focus');
@@ -39,27 +38,28 @@ $(function () {
         $('.not-menu').fadeOut();
     });
 
-   /* if(window.location.href.indexOf("login") > -1 || window.location.href.indexOf("signup") > -1) {
-        $('header, aside').hide();    
-    }
+    $('.form .form-control').removeClass('ng-invalid');
     
-    $('.form .button').on('click', function() {
+    $('.form .buttons').on('click', function() {
             setTimeout(function() {
                 location.reload();
-            }, 2050);
-     });*/
-
-     $('.right .clickable').on('click', function(e) {
-        e.stopPropagation();
-        $('.profile').fadeToggle();
+            }, 50);
      });
 
-     $('aside').css({
-         width: $('.title').innerWidth()
+     $('.form .button, .logger').on('click', function() {
+        setTimeout(function() {
+            location.reload();
+        }, 2040);
+ });
+     
+
+     $('.right .clickable').click(function(e) {
+        e.stopPropagation();
+        $('.profile').fadeToggle();
      });
      
      $('.links .toggle').on('click', function() {
         $('aside').toggleClass('switch');
+        $('.component').toggleClass('switched');
      });
-
 });

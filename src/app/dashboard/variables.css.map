@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAEA,UAAW;EACP,WAAW,EAAE,QAAW;EACxB,mBAAW;IACP,WAAW,EAAE,CAAC;IACd,YAAY,EANZ,QAAQ",
-"sources": ["../variables.scss"],
+"sources": ["variables.scss"],
 "names": [],
-"file": "preview.component.css"
+"file": "variables.css"
 }
