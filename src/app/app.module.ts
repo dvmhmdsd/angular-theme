@@ -1,4 +1,4 @@
-import { ReportsComponent } from './dashboard/reports/reports.component';
+import { DashboardModule } from './dashboard/dashboard.module';
 import { PreviewComponent } from './dashboard/preview/preview.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -20,13 +20,13 @@ import { NotFound404Component } from './not-found404/not-found404.component';
     DashboardComponent,
     SignupComponent,
     PreviewComponent,
-    ReportsComponent,
     NotFound404Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
