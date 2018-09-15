@@ -153,4 +153,54 @@ aside {
             right: 0;
         }
     }
+    .sidebar {
+        .profile-img {
+            cursor: pointer;
+            display: inline-block;
+            img {
+                border-radius: 50%;
+                border: 5px solid #fff;
+                max-height: 120px;
+                max-width: 120px;
+                margin-top: 40px;
+            }
+        }
+        .navigate {
+            background-color: transparent;
+            padding-left: 0;
+            margin-top: 75px;
+
+            li {
+                margin: 35px 0;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background-color: #fff;
+                    color: $mainColor;
+                    cursor: pointer;
+                    i{ 
+                        
+                        background-color: $mainColor;
+                        color: #fff;
+                    }
+                    .sec-item {
+                        color: $mainColor;
+                    }
+                }
+                .item {
+                    text-align: center;
+                    width: 20%;
+                    margin: 0;
+                    float: left;
+                    transition: all 0.2s linear;
+                }
+                .sec-item {
+                    display: inline-block;
+                    font-size: 21px;
+                    width: 80%;
+                    padding: 6px 15px;
+                    color: rgba($mainColor, 0);
+                }
+            }
+        }
+    }
 }

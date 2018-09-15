@@ -67,9 +67,19 @@ header
             .clearfix
         .clearfix
 
-
+- var list = {'fa-home':'Home', 'fa-github':'Repos', 'fa-sign-out':'logout'}
+//- var word = 'hi'
+//- p(class=`dfo;j${word}`) => <p class="dfo;j hi"></p>
 aside
-   .sidebar hi
+   .sidebar.text-center
+        a.profile-img( (click)="navToProfile()" )
+            img(src="../../assets/img/images.jpg", alt="user-image")
+
+        ul.navigate.text-left
+            each y, z in list 
+                li
+                    i.fa.fa-3x.item(class=z, routerLink=`/${y}`)
+                    span.sec-item=y
 
 
 

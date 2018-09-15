@@ -40,10 +40,10 @@ $(function () {
 
     $('.form .form-control').removeClass('ng-invalid');
     
-    $('.form .buttons').on('click', function() {
+    $('.form .buttons, li .fa-sign-out').on('click', function() {
             setTimeout(function() {
                 location.reload();
-            }, 50);
+            });
      });
 
      $('.form .button, .logger').on('click', function() {

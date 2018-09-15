@@ -62,6 +62,12 @@
   </nav>
 </header>
 <aside>
-  <div class="sidebar">hi</div>
+  <div class="sidebar text-center"><a class="profile-img" (click)="navToProfile()"><img src="../../assets/img/images.jpg" alt="user-image"/></a>
+    <ul class="navigate text-left">
+      <li><i class="fa fa-3x item fa-home" routerLink="/Home"></i><span class="sec-item">Home</span></li>
+      <li><i class="fa fa-3x item fa-github" routerLink="/Repos"></i><span class="sec-item">Repos</span></li>
+      <li><i class="fa fa-3x item fa-sign-out" routerLink="/logout"></i><span class="sec-item">logout</span></li>
+    </ul>
+  </div>
 </aside>
 <router-outlet></router-outlet>

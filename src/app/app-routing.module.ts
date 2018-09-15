@@ -17,11 +17,11 @@ const routes: Routes = [
    children: [
       {
         path: '',
-        redirectTo: 'preview',
+        redirectTo: 'Home',
         pathMatch: 'full'
       },
       {
-        path: 'reports',
+        path: 'Repos',
         component: ReportsComponent
       },
       {
@@ -29,12 +29,17 @@ const routes: Routes = [
         component: ProfileComponent
       },
       {
-        path: 'preview',
+        path: 'Home',
         component: PreviewComponent
       }
     ]
   },
   {path: 'dashboard/reports', component: ReportsComponent},
+  {
+    path: 'logout',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   {path: '**', component: NotFound404Component},
 ];
