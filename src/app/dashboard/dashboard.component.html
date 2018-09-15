@@ -64,9 +64,9 @@
 <aside>
   <div class="sidebar text-center"><a class="profile-img" (click)="navToProfile()"><img src="../../assets/img/images.jpg" alt="user-image"/></a>
     <ul class="navigate text-left">
-      <li><i class="fa fa-3x item fa-home" routerLink="/Home"></i><span class="sec-item">Home</span></li>
-      <li><i class="fa fa-3x item fa-github" routerLink="/Repos"></i><span class="sec-item">Repos</span></li>
-      <li><i class="fa fa-3x item fa-sign-out" routerLink="/logout"></i><span class="sec-item">logout</span></li>
+      <li routerLink="/dashboard/Home" routerLinkActive="active"><i class="fa fa-3x item fa-home"></i><span class="sec-item">Home</span></li>
+      <li routerLink="/dashboard/Repos" routerLinkActive="active"><i class="fa fa-3x item fa-github"></i><span class="sec-item">Repos</span></li>
+      <li routerLink="/dashboard/logout" routerLinkActive="active"><i class="fa fa-3x item fa-sign-out"></i><span class="sec-item">logout</span></li>
     </ul>
   </div>
 </aside>

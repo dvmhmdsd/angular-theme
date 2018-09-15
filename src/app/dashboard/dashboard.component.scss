@@ -151,9 +151,24 @@ aside {
             position: absolute;
             text-align: right;
             right: 0;
+            .profile-img {
+                position: relative;
+                right: 25%;
+            }
+            .navigate {
+                li {
+                    .item {
+                        position: relative;
+                        left: auto;
+                        right: 0;
+                        float: right;
+                    }
+                }
+            }
         }
     }
     .sidebar {
+        width: 100%;
         .profile-img {
             cursor: pointer;
             display: inline-block;
@@ -171,15 +186,20 @@ aside {
             margin-top: 75px;
 
             li {
-                margin: 35px 0;
+                overflow: hidden;
+                outline: 0;
                 transition: all 0.3s ease-in-out;
+                &.active {
+                    i {
+                        color: #fff;
+                    }
+                }
                 &:hover {
                     background-color: #fff;
                     color: $mainColor;
                     cursor: pointer;
-                    i{ 
-                        
-                        background-color: $mainColor;
+                    i{     
+                        background-color: rgba($mainColor, 0.8);
                         color: #fff;
                     }
                     .sec-item {
@@ -187,11 +207,16 @@ aside {
                     }
                 }
                 .item {
+                    background-color: $mainColor;
+                    padding: 25px 0;
                     text-align: center;
                     width: 20%;
                     margin: 0;
                     float: left;
                     transition: all 0.2s linear;
+                    position: relative;
+                    left: 0;
+                    right: auto;
                 }
                 .sec-item {
                     display: inline-block;
@@ -199,6 +224,8 @@ aside {
                     width: 80%;
                     padding: 6px 15px;
                     color: rgba($mainColor, 0);
+                    position: relative;
+                    top: 23px;
                 }
             }
         }

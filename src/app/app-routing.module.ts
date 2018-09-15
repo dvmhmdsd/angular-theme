@@ -36,7 +36,7 @@ const routes: Routes = [
   },
   {path: 'dashboard/reports', component: ReportsComponent},
   {
-    path: 'logout',
+    path: 'dashboard/logout',
     redirectTo: 'login',
     pathMatch: 'full'
   },
