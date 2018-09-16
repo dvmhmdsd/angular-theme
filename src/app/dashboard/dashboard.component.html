@@ -62,11 +62,12 @@
   </nav>
 </header>
 <aside>
-  <div class="sidebar text-center"><a class="profile-img" (click)="navToProfile()"><img src="../../assets/img/images.jpg" alt="user-image"/></a>
+  <div class="sidebar text-center"><a class="profile-img" (click)="navToProfile()"><img src="../../assets/img/images.jpg" alt="user-image"/>
+      <p class="user-name">User Name</p></a>
     <ul class="navigate text-left">
-      <li routerLink="/dashboard/Home" routerLinkActive="active"><i class="fa fa-3x item fa-home"></i><span class="sec-item">Home</span></li>
-      <li routerLink="/dashboard/Repos" routerLinkActive="active"><i class="fa fa-3x item fa-github"></i><span class="sec-item">Repos</span></li>
-      <li routerLink="/dashboard/logout" routerLinkActive="active"><i class="fa fa-3x item fa-sign-out"></i><span class="sec-item">logout</span></li>
+      <li (click)="navToHome()" title="Home"><i class="fa fa-3x item fa-home"></i><span class="sec-item">Home</span></li>
+      <li (click)="navToRepos()" title="Repos"><i class="fa fa-3x item fa-github"></i><span class="sec-item">Repos</span></li>
+      <li (click)="navTologout()" title="logout"><i class="fa fa-3x item fa-sign-out"></i><span class="sec-item">logout</span></li>
     </ul>
   </div>
 </aside>

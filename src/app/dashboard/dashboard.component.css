@@ -1,5 +1,7 @@
 .component {
-  margin-left: 264.19px; }
+  height: 100%;
+  margin-left: 253.19px;
+  margin-top: 7px; }
   .component.switched {
     margin-left: 0;
     margin-right: 253.19px; }
@@ -50,7 +52,6 @@ header nav {
         header nav .rest-nav .left .search:focus {
           width: 35%; }
       header nav .rest-nav .left .clickable {
-        position: relative;
         cursor: pointer;
         display: inline-block;
         margin-right: 10px; }
@@ -141,6 +142,12 @@ aside {
         max-height: 120px;
         max-width: 120px;
         margin-top: 40px; }
+      aside .sidebar .profile-img .user-name {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 22px;
+        margin-top: 10px; }
+      aside .sidebar .profile-img:hover {
+        text-decoration: none; }
     aside .sidebar .navigate {
       background-color: transparent;
       padding-left: 0;

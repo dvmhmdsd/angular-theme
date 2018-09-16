@@ -1,12 +1,13 @@
 @import 'variables.scss';
 
 $mainColor: rgb(54, 176, 247);
-$textColor: #3ca2e0;
+$backColor: #3ca2e0;
+$textColor: rgba(#fff, 0.8);
 
 header {
     nav {
         background-color: #fff;
-        color: $textColor;
+        color: $backColor;
         height: 45px;
         border-bottom: 1px solid rgba(0,0,0,0.13);
         overflow: hidden;
@@ -21,7 +22,7 @@ header {
             float: left;
             width: 20%;    
             a {
-                color: rgba(#fff, 0.8);
+                color: $textColor;
                 text-decoration: none;
                 h1 {
                     background-color: $mainColor;
@@ -58,7 +59,6 @@ header {
                     }
                 }
                 .clickable {
-                    position: relative;
                     cursor: pointer;
                     display: inline-block;
                     margin-right: 10px;
@@ -178,6 +178,14 @@ aside {
                 max-height: 120px;
                 max-width: 120px;
                 margin-top: 40px;
+            }
+            .user-name {
+                color: $textColor;
+                font-size: 22px;
+                margin-top: 10px;
+            }
+            &:hover {
+                text-decoration: none;
             }
         }
         .navigate {

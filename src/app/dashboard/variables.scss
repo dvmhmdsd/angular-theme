@@ -1,7 +1,9 @@
 $width: 253.19px;
 
 .component {
-    margin-left: $width + 11;
+    height: 100%;
+    margin-left: $width;
+    margin-top: 7px;
     &.switched {
         margin-left: 0;
         margin-right: $width;

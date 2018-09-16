@@ -34,7 +34,7 @@ export class SignupComponent implements OnInit {
 
   navigate() {
     setTimeout(() => {
-      this.myRoute.navigate(['/dashboard/preview']);
+      this.myRoute.navigate(['/dashboard']);
     }, 2000);
   }
 

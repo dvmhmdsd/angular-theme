@@ -28,11 +28,20 @@ export class DashboardComponent implements OnInit {
     }, 3000);
   }
 
-  logOut() {
+  navTologout() {
     setTimeout(() => {
       this.myRout.navigate(['/login']);
     }, 2040);
+    setTimeout(() => {
+      location.reload();
+    }, 2040);
   }
+  navToRepos() {
+    setTimeout(() => {
+      this.myRout.navigate(['/dashboard/Repos']);
+    }, 3000);
+  }
+
 
 
 }

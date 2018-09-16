@@ -1,5 +1,7 @@
 .component {
-  margin-left: 264.19px; }
+  height: 100%;
+  margin-left: 253.19px;
+  margin-top: 7px; }
   .component.switched {
     margin-left: 0;
     margin-right: 253.19px; }

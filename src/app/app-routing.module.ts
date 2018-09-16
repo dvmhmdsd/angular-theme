@@ -22,11 +22,11 @@ const routes: Routes = [
       },
       {
         path: 'Repos',
-        component: ReportsComponent
+        component: ReportsComponent,
       },
       {
         path: 'profile',
-        component: ProfileComponent
+        component: ProfileComponent,
       },
       {
         path: 'Home',

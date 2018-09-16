@@ -25,7 +25,7 @@ $(function () {
     });
 
 
-    $('.rest-nav .notifi').on('click', function(e) {
+    $('nav .rest-nav .notifi').on('click', function(e) {
         e.stopPropagation();
         $('.not-menu').fadeToggle();
         $('.mess-menu').fadeOut();
@@ -50,7 +50,7 @@ $(function () {
         setTimeout(function() {
             location.reload();
         }, 2040);
- });
+    });
      
 
      $('.right .clickable').click(function(e) {
