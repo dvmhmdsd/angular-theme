@@ -1,7 +1,7 @@
 .component {
   height: 100%;
   margin-left: 253.19px;
-  margin-top: 7px; }
+  margin-top: 55px; }
   .component.switched {
     margin-left: 0;
     margin-right: 253.19px; }
@@ -11,7 +11,10 @@ header nav {
   color: #3ca2e0;
   height: 45px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.13);
-  overflow: hidden; }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
   header nav li {
     cursor: pointer; }
     header nav li:hover {
@@ -27,7 +30,9 @@ header nav {
         background-color: #36b0f7;
         padding: 10px 36px;
         margin: 0 20px 0 0;
-        font-size: 1.7vw; }
+        font-size: 1.7vw;
+        border-bottom: 1px solid #0d98e8;
+        height: 45px; }
   header nav .rest-nav {
     float: left;
     width: 80%;
@@ -70,20 +75,21 @@ header nav {
       header nav .rest-nav .left .not-menu, header nav .rest-nav .left .mess-menu {
         background-color: #fff;
         box-shadow: 0px 7px 10px -3px #ccc;
+        display: none;
         position: absolute;
         margin: 11px 0 0px 70px;
         list-style: none;
         color: #5f5e5e;
-        display: none;
         padding-left: 0;
-        z-index: 2; }
+        z-index: 999; }
         header nav .rest-nav .left .not-menu li, header nav .rest-nav .left .mess-menu li {
           border-bottom: 1px solid #9c9c9c;
           padding: 5px 15px; }
       header nav .rest-nav .left .mess-menu {
         margin: 11px 0 0px 115px; }
     header nav .rest-nav .right .links {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      height: 44px; }
       header nav .rest-nav .right .links li {
         float: left;
         padding: 5px 15px;
@@ -112,6 +118,7 @@ header nav {
 aside {
   background-color: rgba(54, 176, 247, 0.8);
   position: fixed;
+  top: 45px;
   left: 0;
   height: 100%;
   width: 253.19px;
