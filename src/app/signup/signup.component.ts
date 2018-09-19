@@ -22,7 +22,8 @@ export class SignupComponent implements OnInit {
   
   signup(object: any) {
     member.unshift(object);
-    console.log(object);
+    //console.log(object);
+    console.log(member[0]);
     this.toggle();
   }
 

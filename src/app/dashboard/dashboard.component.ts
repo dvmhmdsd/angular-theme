@@ -45,6 +45,7 @@ export class DashboardComponent implements OnInit {
     setTimeout(() => {
       location.reload();
     }, 2040);
+    window.history.forward();
   }
   navToRepos() {
     setTimeout(() => {

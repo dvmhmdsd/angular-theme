@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="caf51424a6d31c13f3885f21cee83c7033f163a0" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{dateTime | date:&apos;long&apos;}}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dashboard/preview/preview.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,18 +1,28 @@
 .component
     .col-xs-6
-        canvas#skillsChart.chart(width='100%', height="60px") {{chart}}
+        canvas#skillsChart.chart.page-item(width='100%', height="75px") {{chart}}
     
     .col-xs-6
-        canvas#strenghthChart.chart(width='100%', height="60px") {{chart2}}
+        canvas#strenghthChart.chart.page-item(width='100%', height="75px") {{chart2}}
+    .clearfix
 
-    table.table.table-default
-        tbody
-            tr
-                td 1
-                td 2
-            tr
-                td 3 
-                td 4
-            tr
-                td 5
-                td 6    
+    ul.skills.page-item
+        li.col-md-6
+            i.fa.fa-check
+            |  Writing DRY code
+        li.col-md-6
+            i.fa.fa-check
+            |  Interested in accessibility&amp; Cross-Browser testing
+        li.col-md-6
+            i.fa.fa-check
+            |  Using modern tools and up-to-date strategies
+        li.col-md-6
+            i.fa.fa-check
+            |  Writing semantic HTML
+        li.col-md-6
+            i.fa.fa-check
+            |  Ability to improve the code and make it readable
+        li.col-md-6
+            i.fa.fa-check
+            |  Excellent output
+        .clearfix

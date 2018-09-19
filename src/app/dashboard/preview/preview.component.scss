@@ -6,4 +6,17 @@
         border-radius: 6px;
         box-shadow: rgb(204, 204, 204) 1px 1px 10px 1px;
     }
+    .skills {
+        font-family: 'Indie Flower', cursive;
+        width: 97%;
+        margin: 15px auto;
+        li {
+            font-size: 1.6vw;
+            padding: 10px;
+        }
+    }
+    .page-item {
+        border-radius: 7px;
+        box-shadow: #cccccc 1px 1px 10px 1px;
+    }
 }

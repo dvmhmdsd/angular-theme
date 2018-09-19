@@ -1,10 +1,10 @@
 .component {
   height: 100%;
-  margin-left: 253.19px;
+  margin-left: 253.49px;
   margin-top: 55px; }
   .component.switched {
     margin-left: 0;
-    margin-right: 253.19px; }
+    margin-right: 253.49px; }
 
 header nav {
   background-color: #fff;
@@ -28,7 +28,7 @@ header nav {
       text-decoration: none; }
       header nav .head a h1 {
         background-color: #36b0f7;
-        padding: 10px 36px;
+        padding: 10px 33px;
         margin: 0 20px 0 0;
         font-size: 1.7vw;
         border-bottom: 1px solid #0d98e8;
@@ -121,7 +121,7 @@ aside {
   top: 45px;
   left: 0;
   height: 100%;
-  width: 253.19px;
+  width: 253.49px;
   color: rgba(255, 255, 255, 0.8); }
   aside.switch {
     right: 0;
