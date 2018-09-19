@@ -47,13 +47,13 @@
       </div>
       <div class="right pull-right">
         <ul class="links list-unstyled">
-          <li class="toggle"> <span>LTR/RTL</span></li>
-          <li class="clickable"> <img src="../../assets/img/images.jpg" alt="user-image"/><span>Project user</span></li>
+          <li class="toggle" tabindex="0"><span>LTR/RTL</span></li>
+          <li class="clickable" tabindex="0"> <img src="../../assets/img/images.jpg" alt="user-image"/><span>Project user</span></li>
           <div class="clearfix"></div>
         </ul>
         <ul class="profile list-unstyled">
-          <li (click)="navToProfile()">Profile</li>
-          <li class="logger" (click)="navTologout()">Logout</li>
+          <li (click)="navToProfile()" tabindex="0">Profile</li>
+          <li class="logger" (click)="navTologout()" tabindex="0">Logout</li>
         </ul>
       </div>
       <div class="clearfix"></div>
@@ -65,9 +65,9 @@
   <div class="sidebar text-center"><a class="profile-img" (click)="navToHome(); rightLeft()"><img src="../../assets/img/images.jpg" alt="user-image"/>
       <p class="user-name">User Name</p></a>
     <ul class="navigate text-left">
-      <li (click)="navToHome(); rightLeft()" title="Home"><i class="fa fa-3x item fa-home"></i><span class="sec-item">Home</span></li>
-      <li (click)="navToRepos(); rightLeft()" title="Repos"><i class="fa fa-3x item fa-github"></i><span class="sec-item">Repos</span></li>
-      <li (click)="navTologout(); rightLeft()" title="logout"><i class="fa fa-3x item fa-sign-out"></i><span class="sec-item">logout</span></li>
+      <li (click)="navToHome(); rightLeft()" title="Home" tabindex="0" role="button"><i class="fa fa-3x item fa-home"></i><span class="sec-item">Home</span></li>
+      <li (click)="navToRepos(); rightLeft()" title="Repos" tabindex="0" role="button"><i class="fa fa-3x item fa-github"></i><span class="sec-item">Repos</span></li>
+      <li (click)="navTologout(); rightLeft()" title="logout" tabindex="0" role="button"><i class="fa fa-3x item fa-sign-out"></i><span class="sec-item">logout</span></li>
     </ul>
   </div>
 </aside>

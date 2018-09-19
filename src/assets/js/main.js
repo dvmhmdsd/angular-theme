@@ -57,6 +57,13 @@ $(function () {
         e.stopPropagation();
         $('.profile').fadeToggle();
      });
+     //to make the button accessible with keyboard
+     $('.right .clickable').keydown(function(e) {
+        if (e.keyCode == 32) {
+            e.stopPropagation();
+            $('.profile').fadeToggle();
+        }
+     });
      
      $('.links .toggle').on('click', function() {
         $('aside').toggleClass('switch');

@@ -54,16 +54,16 @@ header
 
             .right.pull-right
                 ul.links.list-unstyled
-                    li.toggle 
+                    li.toggle(tabindex="0")
                         span LTR/RTL
-                    li.clickable 
+                    li.clickable(tabindex="0") 
                         img(src="../../assets/img/images.jpg", alt="user-image")
                         span Project user
                     .clearfix
                 
                 ul.profile.list-unstyled
-                    li((click)="navToProfile()") Profile
-                    li.logger((click)="navTologout()") Logout
+                    li((click)="navToProfile()", tabindex="0") Profile
+                    li.logger((click)="navTologout()", tabindex="0") Logout
             .clearfix
         .clearfix
 
@@ -78,7 +78,7 @@ aside
 
         ul.navigate.text-left
             each y, z in list 
-                li( (click)=`navTo${y}(); rightLeft()`, title=y)
+                li( (click)=`navTo${y}(); rightLeft()`, title=y, tabindex="0", role="button")
                     i.fa.fa-3x.item(class=z)
                     span.sec-item=y
 
