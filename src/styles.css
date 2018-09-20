@@ -3,6 +3,7 @@
 @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "~font-awesome/css/font-awesome.css";
 
 
 body {

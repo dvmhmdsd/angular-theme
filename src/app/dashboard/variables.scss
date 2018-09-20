@@ -3,7 +3,7 @@ $height: 44px;
 
 .component {
     height: 100%;
-    margin-left: $width;
+    margin-left: $width + 10px;
     margin-top: $height + 11px;
     &.switched {
         margin-left: 0;

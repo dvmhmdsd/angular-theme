@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAGA,UAAW;EACP,MAAM,EAAE,IAAI;EACZ,WAAW,EALP,QAAQ;EAMZ,UAAU,EAAE,IAAc;EAC1B,mBAAW;IACP,WAAW,EAAE,CAAC;IACd,YAAY,EATZ,QAAQ",
+"mappings": "AAGA,UAAW;EACP,MAAM,EAAE,IAAI;EACZ,WAAW,EAAE,QAAa;EAC1B,UAAU,EAAE,IAAc;EAC1B,mBAAW;IACP,WAAW,EAAE,CAAC;IACd,YAAY,EATZ,QAAQ",
 "sources": ["../variables.scss"],
 "names": [],
 "file": "profile.component.css"
