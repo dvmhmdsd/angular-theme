@@ -5,6 +5,7 @@
 .login {
   background-color: #36b0f7;
   color: #fff;
+  height: 100vh;
   padding-top: 50px;
   padding-bottom: 70px; }
   .login .avatar img {
