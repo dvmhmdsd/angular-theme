@@ -6,4 +6,35 @@
     margin-left: 0;
     margin-right: 253.49px; }
 
+.component {
+  padding: 20px; }
+  .component #ghusername {
+    margin-bottom: 20px; }
+  .component #ghsubmitbtn {
+    background: #36b0f7;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 24px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    cursor: pointer; }
+    .component #ghsubmitbtn:hover {
+      background: rgba(54, 176, 247, 0.8); }
+  .component #ghapidata {
+    margin-top: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 16px 4px #ccc;
+    position: relative; }
+    .component #ghapidata:empty {
+      display: none; }
+    .component #ghapidata .fa-times {
+      position: absolute;
+      top: 36%;
+      right: 2%; }
+      .component #ghapidata .fa-times:hover {
+        cursor: pointer; }
+
 /*# sourceMappingURL=reports.component.css.map */

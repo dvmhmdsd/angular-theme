@@ -1,4 +1,11 @@
 .component
-    input(type="text", id="ghusername", name="ghusername" placholder="github username",  (keyup.enter)="request()")
+    .form-group.col-xs-12
+        label(for="ghusername") Write your Github username
+        input.form-control(type="text",
+        id="ghusername",
+        name="ghusername",
+        placholder="github username",
+        (keyup.enter)="request()")
+
     a(id="ghsubmitbtn", (click)="request()") pull user data
-    #ghapidata
+    #ghapidata.text-center

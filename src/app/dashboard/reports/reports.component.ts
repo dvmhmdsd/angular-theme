@@ -12,10 +12,6 @@ export class ReportsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $(function() {
-      
-     
-    });
   }
 
   requestJson(url, callback) {
@@ -34,7 +30,7 @@ export class ReportsComponent implements OnInit {
     let repos  = 'https://api.github.com/users/'+username+'/repos';
 
     this.requestJson(user, function(json){
-      if(json.mesage == "Not Found" || username == '') {
+      if(json.message == "Not Found" || username == '') {
         $('#ghapidata').html('<h1>Nothing is here</h1>');
       } else {
         let fullname     = json.name;

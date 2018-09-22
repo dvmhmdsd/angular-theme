@@ -1,5 +1,8 @@
 
 <div class="component">
-  <input type="text" id="ghusername" name="ghusername" placholder="github username" (keyup.enter)="request()"/><a id="ghsubmitbtn" (click)="request()">pull user data</a>
-  <div id="ghapidata"></div>
+  <div class="form-group col-xs-12">
+    <label for="ghusername">Write your Github username</label>
+    <input class="form-control" type="text" id="ghusername" name="ghusername" placholder="github username" (keyup.enter)="request()"/>
+  </div><a id="ghsubmitbtn" (click)="request()">pull user data</a>
+  <div class="text-center" id="ghapidata"></div>
 </div>

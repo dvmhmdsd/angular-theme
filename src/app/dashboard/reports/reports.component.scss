@@ -1,1 +1,40 @@
 @import '../variables.scss';
+
+.component {
+    padding: 20px;
+    #ghusername {
+        margin-bottom: 20px;
+    }
+    #ghsubmitbtn {
+        background: $mainColor;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-left: 24px;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 20px;
+        cursor: pointer;
+        &:hover {
+            background: rgba($mainColor, 0.8);
+        }
+    }
+    #ghapidata {
+        margin-top: 40px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 16px 4px #ccc;
+        position: relative;
+        &:empty {
+            display: none;
+        }
+        .fa-times{
+            position: absolute;
+            top: 36%;
+            right: 2%;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
