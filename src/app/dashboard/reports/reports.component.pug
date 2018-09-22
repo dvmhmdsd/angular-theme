@@ -1,4 +1,4 @@
 .component
-    input(type="text", id="ghusername", name="ghusername" placholder="github username")
-    a(href="#", id="ghsubmitbtn") pull user data
+    input(type="text", id="ghusername", name="ghusername" placholder="github username",  (keyup.enter)="request()")
+    a(id="ghsubmitbtn", (click)="request()") pull user data
     #ghapidata

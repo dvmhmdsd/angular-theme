@@ -1,5 +1,5 @@
 import { Users } from './users';
 
-export const member: Users[] = [
+export let member: Users[] = [
     {username: 'admin', pass: 'admin'},
 ];

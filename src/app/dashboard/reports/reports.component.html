@@ -1,5 +1,5 @@
 
 <div class="component">
-  <input type="text" id="ghusername" name="ghusername" placholder="github username"/><a href="#" id="ghsubmitbtn">pull user data</a>
+  <input type="text" id="ghusername" name="ghusername" placholder="github username" (keyup.enter)="request()"/><a id="ghsubmitbtn" (click)="request()">pull user data</a>
   <div id="ghapidata"></div>
 </div>

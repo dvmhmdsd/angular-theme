@@ -1,4 +1,7 @@
 
+<div class="loading">
+  <div class="load"></div>
+</div>
 <header>
   <nav>
     <div class="head"><a class="heading" (click)="navToHome()">
@@ -62,7 +65,7 @@
   </nav>
 </header>
 <aside>
-  <div class="sidebar text-center"><a class="profile-img" (click)="navToHome(); rightLeft()"><img src="../../assets/img/images.jpg" alt="user-image"/>
+  <div class="sidebar text-center"><a class="profile-img" (click)="navToProfile(); rightLeft()"><img src="../../assets/img/images.jpg" alt="user-image"/>
       <p class="user-name">User Name</p></a>
     <ul class="navigate text-left">
       <li (click)="navToHome(); rightLeft()" title="Home" tabindex="0" role="button"><i class="fa fa-3x item fa-home"></i><span class="sec-item">Home</span></li>

@@ -4,6 +4,50 @@ $mainColor: rgb(54, 176, 247);
 $backColor: #3ca2e0;
 $textColor: rgba(#fff, 0.8);
 
+
+.loading {
+    width: 100%;
+    height: 3px;
+    z-index: 9999;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    .load.start {
+        width: 0;
+        height: 3px;
+        background-color: rgba(12, 150, 230, 0.9);
+        animation: loading 3s;
+    }
+}
+
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    10% {
+        width: 15%;
+    }
+    20% {
+        width: 30%;
+    }
+    40% {
+        width: 45%;
+    }
+    55% {
+        width: 60%;
+    }
+    70% {
+        width: 80%;
+    }
+    94% {
+        width: 90%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 header {
     nav {
         background-color: #fff;
@@ -13,7 +57,7 @@ header {
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 9999;
+        z-index: 999;
         li {
             cursor: pointer;
             &:hover {
@@ -201,7 +245,6 @@ aside {
 
             li {
                 overflow: hidden;
-                outline: 0;
                 transition: all 0.3s ease-in-out;
                 &.active {
                     i {

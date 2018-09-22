@@ -1,3 +1,6 @@
+.loading
+    .load
+
 header
     nav
         .head
@@ -72,7 +75,7 @@ header
 //- p(class=`dfo;j${word}`) => <p class="dfo;j hi"></p>
 aside
    .sidebar.text-center
-        a.profile-img( (click)="navToHome(); rightLeft()" )
+        a.profile-img( (click)="navToProfile(); rightLeft()" )
             img(src="../../assets/img/images.jpg", alt="user-image")
             p.user-name User Name
 

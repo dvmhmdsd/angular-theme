@@ -71,7 +71,9 @@ export class DashboardComponent implements OnInit {
           $('.component').addClass('switched');
         }, 5)
       }
+      $('.load').removeClass('start');
     }, 3000);
+    $('.load').addClass('start');
   }
 
   navToProfile() {
@@ -80,24 +82,32 @@ export class DashboardComponent implements OnInit {
       if ($('aside').hasClass('switch')) {
         setTimeout(() => {
           $('.component').addClass('switched');
+          
         }, 10)
       }
+      $('.load').removeClass('start');
     }, 3000);
+    $('.load').addClass('start');
   }
 
   navTologout() {
     setTimeout(() => {
       this.myRout.navigate(['/login']);
-    }, 2040);
+      $('.load').removeClass('start');
+    }, 3000);
    /*  setTimeout(() => {
       location.reload();
     }, 2040); */
     window.history.forward();
+    $('.load').addClass('start');
   }
   navToRepos() {
     setTimeout(() => {
       this.myRout.navigate(['/dashboard/Repos']);
+      $('.load').removeClass('start');
     }, 3000);
+    $('.load').addClass('start');
+    
   }
 
   rightLeft() {

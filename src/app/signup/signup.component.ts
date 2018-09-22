@@ -43,28 +43,13 @@ export class SignupComponent implements OnInit {
       });
   
       $('.form .form-control').removeClass('ng-invalid');
-      
-      $('.form .buttons').on('click', function() {
-              setTimeout(function() {
-                  location.reload();
-              });
-       });
-  
-       $('.form .button, .logger').on('click', function() {
-          setTimeout(function() {
-              location.reload();
-          }, 2040);
-      });
        
   
-  });
+    });
   }
 
-  
   signup(object: any) {
-    member.unshift(object);
-    //console.log(object);
-    console.log(member[0]);
+    member.push(object);
     this.toggle();
   }
 
