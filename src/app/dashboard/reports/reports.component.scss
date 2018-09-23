@@ -25,6 +25,8 @@
         border-radius: 20px;
         box-shadow: 1px 1px 16px 4px #ccc;
         position: relative;
+       
+        
         &:empty {
             display: none;
         }

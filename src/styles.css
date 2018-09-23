@@ -16,3 +16,56 @@ ul {
     list-style: none;
 }
 
+
+#loader img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#ghapidata h2 {
+    text-transform: capitalize;
+}
+
+.smallname {
+    display: block;
+    font-size: 1.5vw;
+}
+
+.ghcontent .avi img {
+    border-radius: 50%;
+    border: 2px solid rgba(14, 14, 14, 0.6);
+}
+
+.ghcontent p {
+    margin-top: 18px;
+    border: 1px dotted #000;
+    display: inline-block;
+    padding: 10px;
+}
+
+.repolist {
+    text-align: left;
+}
+
+.repolist p {
+    text-align: left;
+    margin-left: 4%;
+}
+
+.repo-item {
+    background-color: rgb(54, 176, 247);
+    padding: 14px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 4%;
+    margin-top: 10px;
+}
+
+.repo-item:hover {
+    background-color: rgba(54, 176, 247, 0.8);   
+}
+
+.repo-item a {
+    color: #fff;
+}

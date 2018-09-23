@@ -12,6 +12,12 @@ export class ReportsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $(function () {
+      $(document).on('click', '.fa-times', function(e) {
+        e.preventDefault();
+        $('#ghapidata').fadeOut();
+      });
+    });
   }
 
   requestJson(url, callback) {
@@ -24,14 +30,14 @@ export class ReportsComponent implements OnInit {
   }
 
   request() {
-    $('#ghapidata').html('<div id="loader"> <img src="../../../assets/img/ajax_loading.gif"> </div>');
+    $('#ghapidata').show().html('<div id="loader"> <img src="../../../assets/img/ajax_loading.gif"> </div>');
     let username = $('#ghusername').val();
     let user   = 'https://api.github.com/users/'+username;
     let repos  = 'https://api.github.com/users/'+username+'/repos';
 
     this.requestJson(user, function(json){
       if(json.message == "Not Found" || username == '') {
-        $('#ghapidata').html('<h1>Nothing is here</h1>');
+        $('#ghapidata').html('<h1>Nothing is here</h1>' + '<a href="#"><i class="fa fa-times pull-right"></i></a>');
       } else {
         let fullname     = json.name;
         let username     = json.login;
@@ -44,7 +50,7 @@ export class ReportsComponent implements OnInit {
         
         if(fullname == undefined) { fullname = username; }
 
-        let outhtml = '<h2>'+fullname+' <span class="smallname">(@<a href="'+profileurl+'" target="_blank">'+username+'</a>)</span></h2>';
+        let outhtml = '<a href="#"><i class="fa fa-times pull-right"></i></a>' + '<h2>'+fullname+' <span class="smallname">(<a href="'+profileurl+'" target="_blank">@'+username+'</a>)</span></h2>';
         outhtml = outhtml + '<div class="ghcontent"><div class="avi"><a href="'+profileurl+'" target="_blank"><img src="'+aviurl+'" width="80" height="80" alt="'+username+'"></a></div>';
         outhtml = outhtml + '<p>Followers: '+followersnum+' - Following: '+followingnum+'<br>Repos: '+reposnum+'</p></div>';
         outhtml = outhtml + '<div class="repolist clearfix">';
@@ -56,14 +62,16 @@ export class ReportsComponent implements OnInit {
           else {
             outhtml = outhtml + '<p><strong>Repos List:</strong></p> <ul>';
             $.each(repositories, function(index) {
-              outhtml = outhtml + '<li><a href="'+repositories[index].html_url+'" target="_blank">'+repositories[index].name + '</a></li>';
+              outhtml = outhtml + '<li class="repo-item"><a href="'+repositories[index].html_url+'" target="_blank">'+repositories[index].name + '</a></li>';
             });
             outhtml = outhtml + '</ul></div>'; 
           }
           $('#ghapidata').html(outhtml);
         });
       }
+      $('#loader').addClass('circle');
     });
   };
+  
 
 }
