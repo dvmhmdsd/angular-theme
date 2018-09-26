@@ -27,17 +27,19 @@ header {
           margin-top: 0; }
   header nav {
     background-color: #fff;
+    border-bottom: 1px solid #ccc;
     height: 50px; }
     header nav img {
-      position: relative;
+      position: absolute;
       float: right;
       right: 0;
-      top: -60px;
-      max-width: 15%;
+      top: 242px;
+      max-width: 11%;
       height: auto;
       border-radius: 50%; }
     header nav .social {
       margin-bottom: 0;
+      margin-right: 11%;
       height: 100%; }
       header nav .social li {
         display: inline-block;
@@ -60,5 +62,11 @@ header {
         color: #fff; }
         header nav button:hover a {
           color: #fff; }
+
+main section {
+  background-color: #fff; }
+  main section.info {
+    width: 48.79%;
+    margin-left: 1%; }
 
 /*# sourceMappingURL=profile.component.css.map */

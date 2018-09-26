@@ -27,25 +27,24 @@ header {
     }
     nav {
         background-color: #fff;
+        border-bottom: 1px solid #ccc;
         height: 50px;
         img {
-            position: relative;
+            position: absolute;
             float: right;
             right: 0;
-            top: -60px;
-            max-width: 15%;
+            top: 242px;
+            max-width: 11%;
             height: auto;
             border-radius: 50%;
         }
         .social {
             margin-bottom: 0;
+            margin-right: 11%;
             height: 100%;
             li {
                 display: inline-block;
                 height: 100%;
-                button {
-                    
-                }
             }
         }
         button {
@@ -73,6 +72,17 @@ header {
                     color: #fff;
                 }
             }
+        }
+    }
+}
+
+main {
+
+    section {
+        background-color: #fff;
+        &.info {
+            width: 48.79%;
+            margin-left: 1%;
         }
     }
 }
