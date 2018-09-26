@@ -1,18 +1,22 @@
 .component
-    header.text-center
+    header
         section.background
             .cover
                 .overlay.text-left
                     h2 User Profile
                     p Front-end Developer
-    - var list = ['fa-home', 'fa-github', 'fa-sign-out']
+        - var list = {'fa-facebook':"facebook", 'fa-github':"github", 'fa-question':"ask", 'fa-twitter': "twitter"}
         nav 
-            img.pull-right(src="../../../assets/img/images.jpg", alt="user-image")
-
+            img(src="../../../assets/img/images.jpg", alt="user-image")
+            ul.list-unstyled.pull-right.social
+                each y,z in list
+                    li
+                        button(title=y)
+                            a(href="#", target="_blank")
+                                i.fa(class=z)
             button.like-btn    
                 i.fa.fa-heart(title="Like")
                 span 33
-            .clearfix
 
     main
         section.info

@@ -6,6 +6,7 @@
 }
 
 header {
+    position: relative;
     .background {
         background-image: url('../../../assets/img/back.jpg');
         background-size: cover;
@@ -20,6 +21,56 @@ header {
                 background-color: rgba(#000, 0.7);
                 h2 {
                     margin-top: 0;
+                }
+            }
+        }
+    }
+    nav {
+        background-color: #fff;
+        height: 50px;
+        img {
+            position: relative;
+            float: right;
+            right: 0;
+            top: -60px;
+            max-width: 15%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .social {
+            margin-bottom: 0;
+            height: 100%;
+            li {
+                display: inline-block;
+                height: 100%;
+                button {
+                    
+                }
+            }
+        }
+        button {
+            padding: 9px 31px;
+            background-color: transparent;
+            border: none;
+            color: $mainColor;
+            height: 100%;
+            font-size: 1.7vw;
+            &.like-btn {
+                .fa-heart {
+                    margin-right: 8px;
+                }
+                span {
+                    font-size: 1.3vw;
+                }
+            }
+            a{
+                color: $backColor;
+            }
+            &:hover {
+                background-color: $backColor;
+                color: #fff;
+                a {
+                    color: #fff;
                 }
             }
         }
