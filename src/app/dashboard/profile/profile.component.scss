@@ -1,1 +1,27 @@
 @import '../variables.scss';
+
+
+.component {
+    margin-right: 10px;
+}
+
+header {
+    .background {
+        background-image: url('../../../assets/img/back.jpg');
+        background-size: cover;
+        overflow: hidden;
+        .cover {
+            height: 300px;
+            .overlay {
+                color: rgba(#fff, 0.9);
+                padding: 20px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(#000, 0.7);
+                h2 {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

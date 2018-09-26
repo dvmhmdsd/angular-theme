@@ -1,11 +1,18 @@
 .component
-    header
-        .background
+    header.text-center
+        section.background
+            .cover
+                .overlay.text-left
+                    h2 User Profile
+                    p Front-end Developer
+    - var list = ['fa-home', 'fa-github', 'fa-sign-out']
         nav 
             img.pull-right(src="../../../assets/img/images.jpg", alt="user-image")
-            .like-btn    
+
+            button.like-btn    
                 i.fa.fa-heart(title="Like")
                 span 33
+            .clearfix
 
     main
         section.info
