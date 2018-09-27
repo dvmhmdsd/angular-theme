@@ -79,6 +79,7 @@
           height: 100%;
           width: 100%;
           animation: progress 1.8s; }
+
 @keyframes progress {
   0% {
     width: 0%; }
@@ -105,5 +106,3 @@
       outline: 0; }
       .login .form .buttons:hover {
         color: #fff; }
-
-/*# sourceMappingURL=login.component.css.map */

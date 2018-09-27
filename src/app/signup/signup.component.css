@@ -79,6 +79,7 @@
           height: 100%;
           width: 100%;
           animation: progress 1.8s; }
+
 @keyframes progress {
   0% {
     width: 0%; }
@@ -118,5 +119,3 @@
     transition: all 0.3s ease-in; }
   .login .form label.full {
     left: -145px; }
-
-/*# sourceMappingURL=signup.component.css.map */

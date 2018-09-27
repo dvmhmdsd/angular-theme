@@ -10,6 +10,7 @@
   background-color: #fff;
   border-radius: 6px;
   box-shadow: #cccccc 1px 1px 10px 1px; }
+
 .component .skills {
   font-family: 'Indie Flower', cursive;
   width: 97%;
@@ -17,8 +18,7 @@
   .component .skills li {
     font-size: 1.6vw;
     padding: 10px; }
+
 .component .page-item {
   border-radius: 7px;
   box-shadow: #cccccc 1px 1px 10px 1px; }
-
-/*# sourceMappingURL=preview.component.css.map */

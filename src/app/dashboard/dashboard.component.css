@@ -36,6 +36,7 @@
     width: 90%; }
   100% {
     width: 100%; } }
+
 header nav {
   background-color: #fff;
   color: #3ca2e0;
@@ -147,6 +148,7 @@ header nav {
           border: none; }
 
 aside {
+  color: #fff;
   background-color: rgba(54, 176, 247, 0.8);
   position: fixed;
   top: 45px;
@@ -223,5 +225,3 @@ aside {
           color: rgba(54, 176, 247, 0);
           position: relative;
           top: 23px; }
-
-/*# sourceMappingURL=dashboard.component.css.map */
