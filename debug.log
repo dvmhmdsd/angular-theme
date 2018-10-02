@@ -4,3 +4,4 @@
 [0903/135946.049:ERROR:process_info.cc(625)] range at 0xc04e2d9000000000, size 0xf8 fully unreadable
 [0903/135946.049:ERROR:process_info.cc(625)] range at 0xc04e2df400000000, size 0xf8 fully unreadable
 [0903/135946.049:ERROR:process_info.cc(625)] range at 0x0, size 0xf8 fully unreadable
+[1002/170352.758:ERROR:persistent_memory_allocator.cc(845)] Corruption detected in shared-memory segment.

@@ -197,14 +197,14 @@ aside {
         transition: all 0.3s ease-in-out; }
         aside .sidebar .navigate li.active i {
           color: #fff; }
-        aside .sidebar .navigate li:hover {
+        aside .sidebar .navigate li:hover, aside .sidebar .navigate li:focus {
           background-color: #fff;
           color: #36b0f7;
           cursor: pointer; }
-          aside .sidebar .navigate li:hover i {
+          aside .sidebar .navigate li:hover i, aside .sidebar .navigate li:focus i {
             background-color: rgba(54, 176, 247, 0.8);
             color: #fff; }
-          aside .sidebar .navigate li:hover .sec-item {
+          aside .sidebar .navigate li:hover .sec-item, aside .sidebar .navigate li:focus .sec-item {
             color: #36b0f7; }
         aside .sidebar .navigate li .item {
           background-color: #36b0f7;

@@ -63,7 +63,7 @@ export class DashboardComponent implements OnInit {
   }
 
 
-  navToHome() {
+  public navToHome() {
     setTimeout(() => {
       this.myRout.navigate(['/dashboard']);
       if ($('aside').hasClass('switch')) {

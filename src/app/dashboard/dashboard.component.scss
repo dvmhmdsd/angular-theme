@@ -250,7 +250,7 @@ aside {
                         color: #fff;
                     }
                 }
-                &:hover {
+                &:hover, &:focus {
                     background-color: #fff;
                     color: $mainColor;
                     cursor: pointer;

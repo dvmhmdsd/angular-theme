@@ -1,0 +1,23 @@
+@import 'dashboard/variables.scss';
+@import 'dashboard/dashboard.component.scss';
+$screen-height: 500px;
+.container {
+    width: 87.8%;
+    margin: auto;
+    text-align: center;
+    margin-top: $screen-height / 2;
+    .error {
+
+    }
+    
+    .big {
+
+    }
+    .small {
+
+    }
+    
+    .back {
+
+    }
+}

@@ -1,0 +1,241 @@
+.component {
+  height: 100%;
+  margin-left: 263.49px;
+  margin-top: 55px; }
+  .component.switched {
+    margin-left: 0;
+    margin-right: 253.49px; }
+
+.component {
+  height: 100%;
+  margin-left: 263.49px;
+  margin-top: 55px; }
+  .component.switched {
+    margin-left: 0;
+    margin-right: 253.49px; }
+
+.loading {
+  width: 100%;
+  height: 3px;
+  z-index: 9999;
+  background-color: transparent;
+  position: fixed;
+  top: 0; }
+  .loading .load.start {
+    width: 0;
+    height: 3px;
+    background-color: rgba(12, 150, 230, 0.9);
+    animation: loading 3s; }
+
+@keyframes loading {
+  0% {
+    width: 0; }
+  10% {
+    width: 15%; }
+  20% {
+    width: 30%; }
+  40% {
+    width: 45%; }
+  55% {
+    width: 60%; }
+  70% {
+    width: 80%; }
+  94% {
+    width: 90%; }
+  100% {
+    width: 100%; } }
+
+header nav {
+  background-color: #fff;
+  color: #3ca2e0;
+  height: 45px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; }
+  header nav li {
+    cursor: pointer; }
+    header nav li:hover {
+      color: #fff;
+      background-color: #36b0f7; }
+  header nav .head {
+    float: left;
+    width: 20%; }
+    header nav .head a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none; }
+      header nav .head a h1 {
+        background-color: #36b0f7;
+        padding: 10px 33px;
+        margin: 0 20px 0 0;
+        font-size: 1.7vw;
+        border-bottom: 1px solid #0d98e8;
+        height: 45px; }
+  header nav .rest-nav {
+    float: left;
+    width: 80%;
+    height: 45px; }
+    header nav .rest-nav .left {
+      width: 50%;
+      padding: 10px; }
+      header nav .rest-nav .left .fa-search {
+        position: absolute;
+        top: 12px;
+        font-size: 19px; }
+      header nav .rest-nav .left .search {
+        position: relative;
+        background-color: transparent;
+        border-color: transparent transparent #36b0f7;
+        border-width: 1px;
+        box-shadow: none;
+        color: #000;
+        outline: 0;
+        padding-left: 25px;
+        width: 10%;
+        transition: width 0.3s linear; }
+        header nav .rest-nav .left .search:focus {
+          width: 35%; }
+      header nav .rest-nav .left .clickable {
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 10px; }
+        header nav .rest-nav .left .clickable .fa {
+          font-size: 20px; }
+        header nav .rest-nav .left .clickable span {
+          position: relative;
+          color: #fff;
+          z-index: 1;
+          top: -12px;
+          left: 29px;
+          background-color: #de6764;
+          border-radius: 50%;
+          font-size: 12px;
+          padding: 3px; }
+      header nav .rest-nav .left .not-menu, header nav .rest-nav .left .mess-menu {
+        background-color: #fff;
+        box-shadow: 0px 7px 10px -3px #ccc;
+        display: none;
+        position: absolute;
+        margin: 11px 0 0px 70px;
+        list-style: none;
+        color: #5f5e5e;
+        padding-left: 0;
+        z-index: 999; }
+        header nav .rest-nav .left .not-menu li, header nav .rest-nav .left .mess-menu li {
+          border-bottom: 1px solid #9c9c9c;
+          padding: 5px 15px; }
+      header nav .rest-nav .left .mess-menu {
+        margin: 11px 0 0px 115px; }
+    header nav .rest-nav .right .links {
+      margin-bottom: 0;
+      height: 44px; }
+      header nav .rest-nav .right .links li {
+        float: left;
+        padding: 5px 15px;
+        height: 45px; }
+        header nav .rest-nav .right .links li img {
+          max-height: 35px;
+          border-radius: 50%;
+          margin-right: 10px; }
+        header nav .rest-nav .right .links li span {
+          line-height: 2.3; }
+    header nav .rest-nav .right .clickable {
+      position: relative; }
+    header nav .rest-nav .right .profile {
+      display: none;
+      position: absolute;
+      right: 10px;
+      width: 12%;
+      z-index: 3;
+      box-shadow: 0px 7px 10px -3px #ccc; }
+      header nav .rest-nav .right .profile li {
+        padding: 10px;
+        border-bottom: 1px solid #000; }
+        header nav .rest-nav .right .profile li:hover {
+          border: none; }
+
+aside {
+  color: #fff;
+  background-color: rgba(54, 176, 247, 0.8);
+  position: fixed;
+  top: 45px;
+  left: 0;
+  height: 100%;
+  width: 253.49px;
+  color: rgba(255, 255, 255, 0.8); }
+  aside.switch {
+    right: 0;
+    left: auto; }
+    aside.switch .sidebar {
+      position: absolute;
+      text-align: right;
+      right: 0; }
+      aside.switch .sidebar .profile-img {
+        position: relative;
+        right: 25%; }
+      aside.switch .sidebar .navigate li .item {
+        position: relative;
+        left: auto;
+        right: 0;
+        float: right; }
+  aside .sidebar {
+    width: 100%; }
+    aside .sidebar .profile-img {
+      cursor: pointer;
+      display: inline-block; }
+      aside .sidebar .profile-img img {
+        border-radius: 50%;
+        border: 5px solid #fff;
+        max-height: 120px;
+        max-width: 120px;
+        margin-top: 40px; }
+      aside .sidebar .profile-img .user-name {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 22px;
+        margin-top: 10px; }
+      aside .sidebar .profile-img:hover {
+        text-decoration: none; }
+    aside .sidebar .navigate {
+      background-color: transparent;
+      padding-left: 0;
+      margin-top: 75px; }
+      aside .sidebar .navigate li {
+        overflow: hidden;
+        transition: all 0.3s ease-in-out; }
+        aside .sidebar .navigate li.active i {
+          color: #fff; }
+        aside .sidebar .navigate li:hover, aside .sidebar .navigate li:focus {
+          background-color: #fff;
+          color: #36b0f7;
+          cursor: pointer; }
+          aside .sidebar .navigate li:hover i, aside .sidebar .navigate li:focus i {
+            background-color: rgba(54, 176, 247, 0.8);
+            color: #fff; }
+          aside .sidebar .navigate li:hover .sec-item, aside .sidebar .navigate li:focus .sec-item {
+            color: #36b0f7; }
+        aside .sidebar .navigate li .item {
+          background-color: #36b0f7;
+          padding: 25px 0;
+          text-align: center;
+          width: 20%;
+          margin: 0;
+          float: left;
+          transition: all 0.2s linear;
+          position: relative;
+          left: 0;
+          right: auto; }
+        aside .sidebar .navigate li .sec-item {
+          display: inline-block;
+          font-size: 21px;
+          width: 80%;
+          padding: 6px 15px;
+          color: rgba(54, 176, 247, 0);
+          position: relative;
+          top: 23px; }
+
+.container {
+  width: 87.8%;
+  margin: auto;
+  text-align: center;
+  margin-top: 250px; }
